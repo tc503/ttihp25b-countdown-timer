@@ -34,14 +34,21 @@ module tb ();
   assign pwm0_out = uio_out[0];
   assign dis0_ctrl = uo_out[7];
   assign dis0_out = uo_out[6:0];
-  assign enc0_a = ui_in[0];
-  assign enc0_b = ui_in[1];
-  assign enc1_a = ui_in[2];
-  assign enc1_b = ui_in[3];
-  assign enc2_a = ui_in[4];
-  assign enc2_b = ui_in[5];
-  assign countdown0 = ui_in[7];
+//  assign enc0_a = ui_in[0];
+//  assign enc0_b = ui_in[1];
+//  assign enc1_a = ui_in[2];
+//  assign enc1_b = ui_in[3];
+//  assign enc2_a = ui_in[4];
+//  assign enc2_b = ui_in[5];
+//  assign countdown0 = ui_in[7];
 
+  assign ui_in[0] = enc0_a;
+  assign ui_in[1] = enc0_b;
+  assign ui_in[2] = enc1_a;
+  assign ui_in[3] = enc1_b;
+  assign ui_in[4] = enc2_a;
+  assign ui_in[5] = enc2_b;
+  assign ui_in[7] = countdown0;
   // Replace tt_um_example with your module name:
   tt_um_tc503_countdown_timer tt_um_tc503_countdown_timer (
      // .ui_in  ({countdown0,1'b0,enc2_b,enc2_a,enc1_b,enc1_a,enc0_b,enc0_a}),    // Dedicated inputs
