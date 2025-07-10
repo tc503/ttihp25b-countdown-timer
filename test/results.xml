@@ -1,6 +1,6 @@
 <testsuites name="results">
   <testsuite name="all" package="all">
-    <property name="random_seed" value="1752131883" />
-    <testcase name="test_all" classname="test" file="/home/ubuntu/ttihp25b-countdown-timer/test/test.py" lineno="30" time="3.625892400741577" sim_time_ns="156200000.001" ratio_time="43079049.99305924" />
+    <property name="random_seed" value="1752185471" />
+    <testcase name="test_all" classname="test" file="/home/ubuntu/ttihp25b-countdown-timer/test/test.py" lineno="30" time="3.6394360065460205" sim_time_ns="156200000.001" ratio_time="42918737.88137861" />
   </testsuite>
 </testsuites>
